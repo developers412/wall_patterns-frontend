@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wall Patterns</title>
+    <meta charset="utf-8" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Files for this project -->
+    <link href="css/main.css" rel="stylesheet" />
+
+
+</head>
+
+<body style="height: 100%;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav left">
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-center container-fluid" style="margin-top: 70px;">
+
+
+            <div class="col-sm-4">
+
+
+                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title text-center">
+                                Tile (1)
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body" style="overflow: scroll;height: 50vh;">
+                                <div class="row" id="tileOneList">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse"  href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="panel-title text-center">
+                                Tile (2)
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body" style="overflow: scroll;height: 50vh;">
+                                <div class="row" id="tileTwoList">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Style
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
+                      <li><a id="b1" href="#">Basic(1)</a></li>
+                      <li><a id="b2" href="#">Basic(2)</a></li>
+                      <li><a id="c" href="#">Columns</a></li>
+                      <li><a id="r" href="#">Rows</a></li>
+                      <li><a id="g" href="#">Grid</a></li>
+                      <li><a id="br1" href="#">br1</a></li>
+                      <li><a id="br2" href="#">br2</a></li>
+                      <li><a id="bc1" href="#">bc1</a></li>
+                      <li><a id="bc2" href="#">bc2</a></li>
+                    </ul>
+                  </div>
+
+                  <br>
+
+                  <label for="width">Width</label>
+                    <div class="">
+                    <input type="number" class="form-control" id="width" aria-describedby="basic-addon3">
+                    </div>
+                    
+                    <br>
+
+                    <label for="height">Height</label>
+                    <div class="">
+                    <input type="number" class="form-control" id="height" aria-describedby="basic-addon3">
+                    </div>
+
+                    <br>
+
+
+                <div class="row text-center">
+                    <button id="getOptions" onClick="getVariations()" class="btn btn btn-primary">See Variations</button>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-sm-8">
+
+
+                <div class="row">
+                    <div id="mainViewImg" class="col-sm-12">
+
+                        <!-- <img class="img-responsive" src="https://via.placeholder.com/1000x500.png" /> -->
+                    </div>
+                </div>
+
+
+ 
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
