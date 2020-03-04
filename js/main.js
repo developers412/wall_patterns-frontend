@@ -101,7 +101,7 @@ function getVariations() {
 
     $.ajax({
         type : "POST",
-        url : "https://tiles-app.westeurope.azurecontainer.io:3000/files/",
+        url : "http://tiles-app.westeurope.azurecontainer.io:3000/files/",
         // dataType : "json",
         contentType: "application/json; charset=utf-8",
         data : JSON.stringify(data),
@@ -109,7 +109,7 @@ function getVariations() {
             
             $('#mainViewImg').empty();
             $('#mainViewImg').append(`
-            <img class="img-responsive" src="https://tiles-app.westeurope.azurecontainer.io:3000/${result.message}" />
+            <img class="img-responsive" src="http://tiles-app.westeurope.azurecontainer.io:3000/${result.message}" />
             `);
 
         },
